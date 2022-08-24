@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "firstmod",
+  "version": "${version}",
+
+  "name": "My First Mod",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "PunDie!"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT license",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.pundie.firstmod.FirstMod"
+    ],
+    "client": [
+      "net.pundie.firstmod.FirstModClient"
+    ]
+  },
+  "mixins": [
+    "firstmod.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
